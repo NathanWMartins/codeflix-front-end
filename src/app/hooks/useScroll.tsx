@@ -5,6 +5,7 @@ export const useScroll = () => {
 
   useEffect(() => {
     const handleScroll = () => {
+      console.log(window.scrollY); // Verifique o valor no desktop
       setIsScrolled(window.scrollY > 0);
     };
 
